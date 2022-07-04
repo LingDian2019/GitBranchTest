@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkCoreExtensions.ByteExtension">
+            <summary>
+            字节扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ByteExtension.BytesFormattingString(System.Byte[])">
+            <summary>
+            字节数组格式化字符串
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ByteExtension.ByteEquals(System.Byte[],System.Byte[])">
+            <summary>
+            比较两个字节数组是否相等
+            </summary>
+            <param name="original">原始字节数组</param>
+            <param name="target">目标字节数组</param>
+            <returns>是否相等</returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ByteExtension.BitConverterToString(System.Byte[])">
+            <summary>
+            把字节转换字符串
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.CommonExtension">
+            <summary>
+            通用扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.CommonExtension.ObjectToBytes``1(``0)">
+            <summary> 
+            将一个object对象序列化，返回一个byte[]         
+            </summary> 
+            <param name="obj">能序列化的对象</param>         
+            <returns></returns> 
+        </member>
+        <member name="M:FrameworkCoreExtensions.CommonExtension.ObjectToBytes(System.Object)">
+            <summary> 
+            将一个object对象序列化，返回一个byte[]         
+            </summary> 
+            <param name="obj">能序列化的对象</param>         
+            <returns></returns> 
+        </member>
+        <member name="M:FrameworkCoreExtensions.CommonExtension.ObjectToJsonToBytes(System.Object)">
+            <summary>
+            把Object转换Json，然后在转换字节数组
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.CommonExtension.BytesToJsonToObject``1(System.Byte[])">
+            <summary> 
+            将一个序列化后的byte[]数组还原         
+            </summary>
+            <param name="bytes"></param>         
+            <returns></returns> 
+        </member>
+        <member name="M:FrameworkCoreExtensions.CommonExtension.BytesToObject``1(System.Byte[])">
+            <summary> 
+            将一个序列化后的byte[]数组还原         
+            </summary>
+            <param name="bytes"></param>         
+            <returns></returns> 
+        </member>
+        <member name="M:FrameworkCoreExtensions.CommonExtension.BytesToObject(System.Byte[],System.Type)">
+            <summary> 
+            将一个序列化后的byte[]数组还原         
+            </summary>
+            <param name="bytes"></param>  
+            <param name="type"></param>  
+            <returns></returns> 
+        </member>
+        <member name="T:FrameworkCoreExtensions.DataConversionExtension">
+            <summary>
+            数据转换扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.ShortToString(System.Int16,System.Int32)">
+            <summary>
+            把short转换16进制表示字符串，并指定长度左边用零填充
+            </summary>
+            <param name="value"></param>
+            <param name="totalWidth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.HexStringToHexByte(System.String)">
+            <summary>
+            16进制字符串转换成16进制byte数组
+            </summary>
+            <param name="hexString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.ToHexStrFromByte(System.Byte[])">
+            <summary>
+            字节数组转16进制字符串
+            </summary>
+            <param name="byteDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.BytesLowHighToShort(System.Byte[])">
+            <summary>
+             把Short字节转换Short，低位在前 高位在后
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.ShortToBytesLowHigh(System.Int16)">
+            <summary>
+             把Short转换字节，低位在前 高位在后
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.StringToASCIIBytes(System.String)">
+            <summary>
+            字符串转ASCII
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DataConversionExtension.ASCIIByteToString(System.Byte[])">
+            <summary>
+            字符串转ASCII
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.DateTimeExtension">
+            <summary>
+            时间扩展类
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DateTimeExtension.GetDateTimeMsString(System.DateTime)">
+            <summary>
+            把时间转换字符串yyyy-MM-dd HH:mm:ss:fff格式
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DateTimeExtension.ComparisonTotalSeconds(System.DateTime,System.DateTime)">
+            <summary>
+            时间比较返回总秒数
+            </summary>
+            <param name="value">新时间</param>
+            <param name="comparisonTime">比较时间，也就是跟旧时间对比</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DateTimeExtension.ComparisonTotalMilliseconds(System.DateTime,System.DateTime)">
+            <summary>
+            时间比较返回总毫秒
+            </summary>
+            <param name="value">新时间</param>
+            <param name="comparisonTime">比较时间，也就是跟旧时间对比</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DateTimeExtension.GetUtcTimeStamp(System.DateTime)">
+            <summary>
+            获取Utc时间戳
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DateTimeExtension.GetDateTimeByUtcTimeStamp(System.Int64)">
+            <summary>
+            将时间戳转换时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DateTimeExtension.GetyyyyMMdd(System.Int32)">
+            <summary>
+            把int时间改成用-分割字符串时间
+            </summary>
+            <param name="yyyyMMdd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.DictionaryExtension">
+            <summary>
+            字典扩展方法
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.DictionaryExtension.GetValue(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">
+            <summary>
+            获取值
+            </summary>
+            <param name="keyValuePairs"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.EndPointExtension">
+            <summary>
+            EndPoint 扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.EndPointExtension.ToEndPointString(System.Net.EndPoint)">
+            <summary>
+            EndPoint 转换字符串内容
+            </summary>
+            <param name="endPoint"></param>
+            <returns>　::: 这三个: 的前两个”::“，是“0:0:0:0:0:0:0:0”的缩写，相当于IPv6的“0.0.0.0”，就是本机的所有IPv6地址，第三个:是IP和端口的分隔符</returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.EnumExtension">
+            <summary>
+            枚举扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.EnumExtension.ToEnum``1(System.String)">
+            <summary>
+            枚举值转换枚举对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.ExceptionExtension">
+            <summary>
+            异常扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExceptionExtension.ToExceptionCustomString(System.Exception)">
+            <summary>
+            Exception 转换字符串内容
+            </summary>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.ExpressionExtension">
+            <summary>
+            表达式扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.AndExtension``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            And
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.AndExtension``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            And
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="isCompose"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.AndAlsoExtension``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            AndAlso
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.AndAlsoExtension``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            AndAlso
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="isCompose"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.OrExtension``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            Or
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.OrExtension``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            Or
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="isCompose"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ExpressionExtension.ComposeExtension``1(System.Linq.Expressions.Expression{``0},System.Linq.Expressions.Expression{``0},System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})">
+            <summary>
+            组合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="first"></param>
+            <param name="second"></param>
+            <param name="merge"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.ParameterRebinder">
+            <summary>
+            参数重新绑定
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ParameterRebinder.#ctor(System.Collections.Generic.Dictionary{System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.ParameterExpression})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="map"></param>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ParameterRebinder.ReplaceParameters(System.Collections.Generic.Dictionary{System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression)">
+            <summary>
+            更换参数
+            </summary>
+            <param name="map"></param>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ParameterRebinder.VisitParameter(System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            访问参数
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.HttpContextExtension">
+            <summary>
+            Http 上下文扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.HttpContextExtension.GetID``1(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            获取ID
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.JsonExtension">
+            <summary>
+            Json 扩展方法
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.JsonExtension.ToJsonString``1(``0,System.String)">
+            <summary>
+            Json 序列化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="strDateTimeFormat">时间格式化</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.JsonExtension.ToJsonModel``1(System.String,System.String)">
+            <summary>
+            Json 字符串序列化对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <param name="strDateTimeFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.JsonExtension.JsonPathToJsonObject``1(System.String)">
+            <summary>
+            Json路径序列化对象
+            </summary>
+            <param name="path">传递相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.List">
+            <summary>
+            List扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.List.IsNullOrEmpty``1(System.Collections.Generic.List{``0})">
+            <summary>
+            判断泛型是否有元素
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.List.SingleQuotesFormat``1(System.Collections.Generic.List{``0})">
+            <summary>
+            List 单引号格式化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.List.CommaFormat``1(System.Collections.Generic.List{``0})">
+            <summary>
+            List 逗号格式化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.List.JointFormat``1(System.Collections.Generic.List{``0})">
+            <summary>
+            List 拼接格式化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.MD5Extension">
+            <summary>
+            MD5 扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.MD5Extension.GetMD5(System.String)">
+            <summary>
+            获取加密MD5字符串
+            </summary>
+            <param name="plaintext">明文</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.MemoryCacheExtension">
+            <summary>
+            内存缓存扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.MemoryCacheExtension.Contains(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.String)">
+            <summary>
+            判断是否在缓存中
+            </summary>
+            <param name="memoryCache"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.MemoryCacheExtension.GetAllKeys(Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            获取所有缓存键
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.MemoryCacheExtension.GetDictionary(Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            获取IMemoryCache
+            </summary>
+            <param name="memoryCache"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.ModbusCRC16Extension">
+            <summary>
+            ModbusCRC16 扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ModbusCRC16Extension.ModbusCRC16Calculate(System.Byte[])">
+            <summary>
+            Modbus CRC16 计算
+            </summary>
+            <param name="byteData">要进行计算的字节数组</param>
+            <returns>计算后的数组</returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ModbusCRC16Extension.ModbusCRC16Check(System.Byte[],System.Byte[])">
+            <summary>
+            ModbusCRC16 检查
+            </summary>
+            <param name="byteData"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.StringExtension">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.FormatCustom(System.String,System.Object[])">
+            <summary>
+            自定义格式化
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.EqualIgnoreCase(System.String,System.String[])">
+            <summary>
+            忽略大小写的字符串相等比较，判断是否以任意一个待比较字符串相等
+            </summary>
+            <param name="value">字符串</param>
+            <param name="strs">待比较字符串数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.StartsWithIgnoreCase(System.String,System.String[])">
+            <summary>
+            忽略大小写的字符串开始比较，判断是否以任意一个待比较字符串开始
+            </summary>
+            <param name="value">字符串</param>
+            <param name="strs">待比较字符串数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.EndsWithIgnoreCase(System.String,System.String[])">
+            <summary>
+            忽略大小写的字符串结束比较，判断是否以任意一个待比较字符串结束
+            </summary>
+            <param name="value">字符串</param>
+            <param name="strs">待比较字符串数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.IsNullOrEmpty(System.String)">
+            <summary>
+            指示指定的字符串是 null 还是 String.Empty 字符串
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            是否空或者空白字符串
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.SplitCustom(System.String,System.String[])">
+            <summary>
+            拆分字符串，过滤空格，无效时返回空数组
+            </summary>
+            <param name="value">字符串</param>
+            <param name="separators">分组分隔符，默认逗号分号</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreExtensions.StringExtension.SplitAsInt(System.String,System.String[])">
+            <summary>
+            拆分字符串成为整型数组，默认逗号分号分隔，无效时返回空数组
+            </summary>
+            <remarks>过滤空格、过滤无效、不过滤重复</remarks>
+            <param name="value">字符串</param>
+            <param name="separators">分组分隔符，默认逗号分号</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreExtensions.ValidateExtension">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ValidateExtension.IsNull``1(``0,System.String)">
+            <summary>
+            是否是空验证
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="throwMessage"></param>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ValidateExtension.IsNotNull``1(``0,System.String)">
+            <summary>
+            不是null验证
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="throwMessage"></param>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ValidateExtension.IsTrue(System.Boolean,System.String)">
+            <summary>
+            是真验证
+            </summary>
+            <param name="isTrue"></param>
+            <param name="throwMessage"></param>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ValidateExtension.IsFalse(System.Boolean,System.String)">
+            <summary>
+            是假验证
+            </summary>
+            <param name="isFalse"></param>
+            <param name="throwMessage"></param>
+        </member>
+        <member name="M:FrameworkCoreExtensions.ValidateExtension.ModelVerification(System.Object)">
+            <summary>
+            模型验证
+            </summary>
+            <param name="obj"></param>
+        </member>
+    </members>
+</doc>

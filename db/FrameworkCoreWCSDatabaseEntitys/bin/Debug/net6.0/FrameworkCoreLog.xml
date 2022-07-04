@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreLog</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkCoreLog.LogBasisHelper">
+            <summary>
+            日志基础帮助类
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.GetLogOpenLevelByLogLevel(FrameworkCoreLog.LogLevel)">
+            <summary>
+            日志等级转换
+            </summary>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.GetConsoleColorByLogLevel(FrameworkCoreLog.LogOpenLevel)">
+            <summary>
+            根据日志等级获取颜色
+            </summary>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.GetPathByFileName(System.String,System.String)">
+            <summary>
+            递归搜索 根据路径搜索该路径下文件名称，并返回路径
+            </summary>
+            <param name="path">路径</param>
+            <param name="fileName">文件名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.GetDirectoryFilePathByFileName(System.String,System.String)">
+            <summary>
+            根据文件夹路径，获取当前文件夹下是否有存在名称的的文件，并返回路径
+            </summary>
+            <param name="path"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.XmlDeserialize``1(System.String)">
+            <summary>
+            获取日志XML
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.GetSerializer``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.LogBasisHelper.DeleteDir(System.String)">
+            <summary>
+            删除文件夹及其下面所有数据
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="T:FrameworkCoreLog.LogLevel">
+            <summary>
+            日志等级
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogLevel.Debug">
+            <summary>
+            最低调试。细粒度信息事件对调试应用程序非常有帮助
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogLevel.Info">
+            <summary>
+            普通消息。在粗粒度级别上突出强调应用程序的运行过程
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogLevel.Warn">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogLevel.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogLevel.Fatal">
+            <summary>
+            严重错误
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreLog.LogNameType">
+            <summary>
+            框架需要用的日志名称
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.BusinessEventDispatcher">
+            <summary>
+            业务事件调度
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.LogsError">
+            <summary>
+            日志错误
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.LED">
+            <summary>
+            LED日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.Conveyor">
+            <summary>
+            输送线日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.RoboticArm">
+            <summary>
+            机械臂日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.Business">
+            <summary>
+            业务日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.System">
+            <summary>
+            系统日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.ExecuteLog">
+            <summary>
+            执行Log
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.WebApi">
+            <summary>
+            WebApi日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.BranchDispatching">
+            <summary>
+            BranchDispatching 分支调度日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.ScheduleService">
+            <summary>
+            定时任务服务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.MelsecPLC">
+            <summary>
+            三菱PLC
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.SiemensPLC">
+            <summary>
+            西门子PLC
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.Database">
+            <summary>
+            Database 日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.RabbitMQ">
+            <summary>
+            RabbitMQ 日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.Workflow">
+            <summary>
+            工作流程 日志
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogNameType.RulesEngine">
+            <summary>
+            规则引擎 日志
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreLog.LogOpenLevel">
+            <summary>
+            日志打开等级
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.All">
+            <summary>
+            打开所有日志记录
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.Debug">
+            <summary>
+            最低调试。细粒度信息事件对调试应用程序非常有帮助
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.Info">
+            <summary>
+            普通消息。在粗粒度级别上突出强调应用程序的运行过程
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.Warn">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.Fatal">
+            <summary>
+            严重错误
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreLog.LogOpenLevel.Off">
+            <summary>
+            关闭所有日志记录
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreLog.FrameworkCoreLogExtension">
+            <summary>
+            框架日志扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.FrameworkCoreLogExtension.AddFrameworkCoreLogServiceCollection(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            向容器添加服务
+            </summary>
+            <param name="services"></param>
+             <param name="pathLog4NetConfig"></param>
+        </member>
+        <member name="M:FrameworkCoreLog.FrameworkCoreLogExtension.ConfigureFrameworkCoreLog(Microsoft.Extensions.Hosting.IHostBuilder,System.String)">
+            <summary>
+            自动注入系统配置文件
+            </summary>
+            <param name="hostBuilder"></param>
+            <param name="pathLog4NetConfig"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreLog.FrameworkCoreLogModule">
+            <summary>
+            Log4net 模块
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.FrameworkCoreLogModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:FrameworkCoreLog.ILog4NetService">
+            <summary>
+            日志接口
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.ILog4NetService.WriteLog(System.String,FrameworkCoreLog.LogLevel,System.String,System.Boolean,System.String,System.String,System.Int32)">
+            <summary>
+            写日志
+            </summary>
+            <param name="logName">日志名称,用于区别是系统日志、业务日志等，用户自定义的</param>
+            <param name="level">日志级别</param>
+            <param name="message">消息</param>
+            <param name="forceOutputConsole">强制输出控制台</param>
+            <param name="callerName">调用方方法或者属性名称</param>
+            <param name="path">调用方完整路径</param>
+            <param name="line">调用方行号</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ILog4NetService.WriteLog(System.String,System.Exception,System.Boolean,System.String,System.String,System.Int32)">
+            <summary>
+            写日志
+            </summary>
+            <param name="logName">日志名称,用于区别是系统日志、业务日志等，用户自定义的</param>
+            <param name="ex">Exception</param>
+            <param name="forceOutputConsole">强制输出控制台</param>
+            <param name="callerName">调用方方法或者属性名称</param>
+            <param name="path">调用方完整路径</param>
+            <param name="line">调用方行号</param>
+        </member>
+        <member name="T:FrameworkCoreLog.Log4NetXMLCustomConfig">
+            <summary>
+            Log4Net XML 自定义配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetXMLCustomConfig.OutDataDay">
+            <summary>
+            过期天数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetXMLCustomConfig.LogRecordLevel">
+            <summary>
+            日志记录等级
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetXMLCustomConfig.OpenConsoleLog">
+            <summary>
+            打开控制台日志输出
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetXMLCustomConfig.IsUseExceptionless">
+            <summary>
+            是否使用Exceptionless记录日志
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreLog.StringStyled">
+            <summary>
+            字符串样式
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreLog.ConsoleLogService">
+            <summary>
+            控制台日志服务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.WriteLog(System.Drawing.Color,System.String)">
+            <summary>
+            写日志
+            </summary>
+            <param name="color">颜色</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.WriteLogLine(System.Exception)">
+            <summary>
+            写日志
+            </summary>
+            <param name="ex">异常消息</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.WriteLogLine(System.Drawing.Color,System.String)">
+            <summary>
+            写日志
+            </summary>
+            <param name="color">颜色</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.WarnLog(System.String,System.Boolean)">
+            <summary>
+            写日志
+            </summary>
+            <param name="message">消息</param>
+            <param name="line">是否换行，默认换行</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.ErrorLog(System.String,System.Boolean)">
+            <summary>
+            写日志
+            </summary>
+            <param name="message">消息</param>
+            <param name="line">是否换行，默认换行</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.SucceedLog(System.String,System.Boolean)">
+            <summary>
+            写日志
+            </summary>
+            <param name="message">消息</param>
+            <param name="line">是否换行，默认换行</param>
+        </member>
+        <member name="M:FrameworkCoreLog.ConsoleLogService.WriteLogLine(System.Drawing.Color,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            写日志
+            </summary>
+            <param name="color">颜色</param>
+            <param name="message">消息</param>
+            <param name="callerName">调用方方法或者属性名称</param>
+            <param name="path">调用方完整路径</param>
+            <param name="lineNumber ">调用方行号</param>
+        </member>
+        <member name="T:FrameworkCoreLog.Log4NetService">
+            <summary>
+            Log4Net 帮助类【配置文件必须取名：Log4Net.config】
+            log4net debug="false" outdata_days="7" log_level ="debug" open_console_log="true"
+            outdata_days 用于配置日志保存期限 
+            log_level 日志写入最低等级
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.Log4NetService.#ctor(FrameworkCoreSystemConfig.IFrameworkConfigService,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="frameworkConfig"></param>
+            <param name="factory"></param>
+        </member>
+        <member name="M:FrameworkCoreLog.Log4NetService.Initialize">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetService.OpenLevel">
+            <summary>
+            操作日志等级，只输出大于等于该级别的日志
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetService.LastDeleteLogFileTime">
+            <summary>
+            上一次删除日志文件时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreLog.Log4NetService.Log4NetXMLCustomConfig">
+            <summary>
+            Log4Net 配置信息
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.Log4NetService.GetLogger(System.String)">
+            <summary>
+            获取记录器
+            </summary>
+            <param name="logName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreLog.Log4NetService.DeleteFile">
+            <summary>
+            用于清除过期时间日志
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreLog.Log4NetService.WriteLog(System.String,FrameworkCoreLog.LogLevel,System.String,System.Boolean,System.String,System.String,System.Int32)">
+            <summary>
+            写日志
+            </summary>
+            <param name="logName">日志名称,用于区别是系统日志、业务日志等，用户自定义的</param>
+            <param name="level">日志级别</param>
+            <param name="message">消息</param>
+            <param name="forceOutputConsole">强制输出控制台</param>
+            <param name="callerName">调用方方法或者属性名称</param>
+            <param name="path">调用方完整路径</param>
+            <param name="line">调用方行号</param>
+        </member>
+        <member name="M:FrameworkCoreLog.Log4NetService.WriteLog(System.String,System.Exception,System.Boolean,System.String,System.String,System.Int32)">
+            <summary>
+            写日志
+            </summary>
+            <param name="logName">日志名称,用于区别是系统日志、业务日志等，用户自定义的</param>
+            <param name="ex">Exception</param>
+            <param name="forceOutputConsole">强制输出控制台</param>
+            <param name="callerName">调用方方法或者属性名称</param>
+            <param name="path">调用方完整路径</param>
+            <param name="line">调用方行号</param>
+        </member>
+    </members>
+</doc>

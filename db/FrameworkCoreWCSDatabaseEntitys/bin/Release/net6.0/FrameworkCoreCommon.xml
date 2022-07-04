@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreCommon</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkCoreCommon.DataTableHelper">
+            <summary>
+            DataTable帮助类
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.DataTableToModel``1(System.Data.DataSet,System.Int32)">
+            <summary>  
+            填充对象列表：用DataSet的第index个表填充实体类
+            </summary>  
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.DataTableToModel``1(System.Data.DataTable)">
+            <summary>  
+            填充对象列表：用DataTable填充实体类
+            </summary>  
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.DataTableToModelByDataRow``1(System.Data.DataRow)">
+            <summary>  
+            填充对象：用DataRow填充实体类
+            </summary>  
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.DataTableToModelByOneRow``1(System.Data.DataTable)">
+            <summary>  
+            填充对象：用DataTable填充实体类 只会取一行数据
+            </summary>  
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.ModelToFillDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            实体类转换成DataTable
+            </summary>
+            <param name="modelList">实体类列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.ModelToFillDataTable``1(``0)">
+            <summary>
+            实体类转换成DataTable
+            </summary>
+            <param name="model">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.DataTableHelper.CreateData(System.Type)">
+            <summary>
+            根据实体类得到表结构
+            </summary>
+            <param name="type">实体类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.EntityCopyValueHelper">
+            <summary>
+            实体之间值拷贝
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.EntityCopyValueHelper.Mapper``1(``0,``0,System.Collections.Generic.List{System.String})">
+            <summary>
+            反射实现两个类的对象之间相同属性的值的复制【会修改原实体数据】
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="typeOld"></param>
+            <param name="typeNew"></param>
+            <param name="listNoKey">不包含的属性名称</param>
+        </member>
+        <member name="T:FrameworkCoreCommon.MathExpression">
+            <summary>
+            数学表达式
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.MathExpression.AddChar">
+            <summary>
+            加法
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.MathExpression.SubtractChar">
+            <summary>
+            减法
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.MathExpression.MultiplyChar">
+            <summary>
+            乘法
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.MathExpression.DivideChar">
+            <summary>
+            除法
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.GetOperationLevel(System.String)">
+            <summary>
+            计算运算符优先级
+            </summary>
+            <param name="op"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.AdapteAndReplace(System.String)">
+            <summary>
+            适配和替换
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.Complie(System.String,System.Object[])">
+            <summary>
+            解逆波兰表达式
+            </summary>
+            <param name="expression">标准逆波兰表达式</param>
+            <param name="args"></param>
+            <returns>逆波兰表达式的解</returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.IsValid(System.String[])">
+            <summary>
+            是否有效
+            </summary>
+            <param name="arr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.ToDouble(System.String)">
+            <summary>
+            转为浮点数
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.MathExpression.ComplieRpnExp(System.Double,System.Double,System.String)">
+            <summary>
+            计算逆波兰表达式
+            </summary>
+            <param name="last">最后压入数字堆栈的数字</param>
+            <param name="first">首先压入数字堆栈的数字</param>
+            <param name="op">操作运算符</param>
+            <returns>返回计算结果</returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.RpnExpression">
+            <summary>
+            逆波兰表达式
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.RpnExpression.LeftBracket">
+            <summary>
+            左括号
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.RpnExpression.RightBracket">
+            <summary>
+            右括号
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.RpnExpression.JoinChar">
+            <summary>
+            连接符
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreCommon.RpnExpression.EmptyChar">
+            <summary>
+            空格
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.RpnExpression.OperationChars">
+            <summary>
+            操作符数组
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.IsBracket(System.String)">
+            <summary>
+            是否括号
+            </summary>
+            <param name="ch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.IsBracket(System.Char)">
+            <summary>
+            是否括号
+            </summary>
+            <param name="ch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.GetOperationLevel(System.String)">
+            <summary>
+            计算操作等级
+            </summary>
+            <param name="op"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.IsBracketMatch(System.String)">
+            <summary>
+            是否括号匹配
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.AdapteAndReplace(System.String)">
+            <summary>
+            适配器和替换
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FrameworkCoreCommon.RpnExpression.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.ToExpression(System.String)">
+            <summary>
+            将中缀表达式转换为逆波兰表达式
+            </summary>
+            <param name="expression">标准中缀表达式</param>
+            <returns>标准逆波兰表达式</returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.IsValid(System.String[])">
+            <summary>
+            是否有效
+            </summary>
+            <param name="splitArray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.RpnExpression.Complie(System.String,System.Object[])">
+            <summary>
+            编译计算
+            </summary>
+            <param name="expression"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.FrameworkCoreCommonModule">
+            <summary>
+            FrameworkCoreCommon 模块
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.FrameworkCoreCommonModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:FrameworkCoreCommon.JsonConverterLong">
+            <summary>
+            Long类型Json序列化重写
+            在js中传输会导致精度丢失，故而在序列化时转换成字符类型
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.JsonConverterLong.CanConvert(System.Type)">
+            <summary>
+            是否可以转换
+            </summary>
+            <param name="objectType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.JsonConverterLong.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            读json
+            </summary>
+            <param name="reader"></param>
+            <param name="objectType"></param>
+            <param name="existingValue"></param>
+            <param name="serializer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.JsonConverterLong.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            写json
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="serializer"></param>
+        </member>
+        <member name="T:FrameworkCoreCommon.NewtonsoftJsonCustomContractResolver">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.NewtonsoftJsonCustomContractResolver.ResolveContractConverter(System.Type)">
+            <summary>
+            对长整型做处理
+            </summary>
+            <param name="objectType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.CustomNotifyPropertyChange">
+            <summary>
+            通知属性变更
+            </summary>
+        </member>
+        <member name="E:FrameworkCoreCommon.CustomNotifyPropertyChange.PropertyChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.CustomNotifyPropertyChange.NotifyPropertyChanged(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="oldPropertyValue">陈旧的值</param>
+            <param name="propertyName">更新的属性名称</param>
+        </member>
+        <member name="T:FrameworkCoreCommon.DefinitionCommon">
+            <summary>
+            常见的定义
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreCommon.DefinitionCommon.CustomPropertyChangedEventHandler">
+            <summary>
+            自定义属性更改的事件处理
+            </summary>
+            <param name="oldModel"></param>
+            <param name="newModel"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:FrameworkCoreCommon.ICustomNotifyPropertyChange">
+            <summary>
+            自定义属性变更通知
+            </summary>
+        </member>
+        <member name="E:FrameworkCoreCommon.ICustomNotifyPropertyChange.PropertyChanged">
+            <summary>
+            属性变更
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreCommon.PropertyChangeLog`1">
+            <summary>
+            属性变更日志
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeLog`1.#ctor">
+            <summary>
+            ctor
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeLog`1.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            ctor
+            </summary>
+            <param name="propertyName">属性名称</param>
+            <param name="displayName">属性对应页面上的名称</param>
+            <param name="oldValue">旧值</param>
+            <param name="newValue">新值</param>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeLog`1.#ctor(System.String,System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            ctor
+            </summary>
+            <param name="className">类名称</param>
+            <param name="propertyName">属性名称</param>
+            <param name="displayName">属性对应页面上的名称</param>
+            <param name="oldValue">旧值</param>
+            <param name="newValue">新值</param>
+            <param name="changedTime">修改时间</param>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeLog`1.ClassName">
+            <summary>
+            类名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeLog`1.PropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeLog`1.DisplayName">
+            <summary>
+            属性对应页面上的名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeLog`1.OldValue">
+            <summary>
+            旧值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeLog`1.NewValue">
+            <summary>
+            新值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeLog`1.ChangedTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreCommon.PropertyChangeTrackingAttribute">
+            <summary>
+            属性变更跟着特性
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeTrackingAttribute.#ctor">
+            <summary>
+            构造一个新的 PropertyChangeTrackingAttribute 特性实例
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeTrackingAttribute.#ctor(System.Boolean)">
+            <summary>
+            构造一个新的 PropertyChangeTrackingAttribute 特性实例
+            </summary>
+            <param name="ignore">是否忽略该字段的数据变化</param>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeTrackingAttribute.#ctor(System.String)">
+            <summary>
+            构造一个新的 PropertyChangeTrackingAttribute 特性实例
+            </summary>
+            <param name="displayName">属性对应页面显示名称</param>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeTrackingAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造一个新的 PropertyChangeTrackingAttribute 特性实例
+            </summary>
+            <param name="displayName">属性对应页面显示名称</param>
+            <param name="ignore">是否忽略该字段的数据变化</param>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeTrackingAttribute.DisplayName">
+            <summary>
+            获取特性中的属性对应页面上显示名称参数信息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeTrackingAttribute.Ignore">
+            <summary>
+            获取特性中的是否忽略该字段的数据变化参数信息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeTrackingAttribute.DisplayNameValue">
+            <summary>
+            修改属性对应页面显示名称参数值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreCommon.PropertyChangeTrackingAttribute.IgnoreValue">
+            <summary>
+            修改是否忽略该字段的数据变化
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreCommon.PropertyChangeTrackingExtensions">
+            <summary>
+            属性变更跟踪扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.PropertyChangeTrackingExtensions.GetPropertyLogs``1(``0,``0,System.String)">
+            <summary>
+            获取类属性数据变化记录
+            </summary>
+            <typeparam name="T">监听的类类型</typeparam>
+            <param name="oldObj">包含原始值的类</param>
+            <param name="newObj">变更属性值后的类</param>
+            <param name="propertyName">指定的属性名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.AssemblyService">
+            <summary>
+            程序集服务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.AssemblyService.GetAssemblyByPath(System.String,System.Boolean)">
+            <summary>
+            加载程序集
+            </summary>
+            <param name="path">程序集路径</param>
+            <param name="occupationModel">是否占用模式，默认非占用，占用是指程序加载后无法释放资源</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.IPService">
+            <summary>
+            IP 帮助类
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.IPService.MyIPv4">
+            <summary>
+            获取本地第一个IPv4地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.IPService.MyIPv6">
+            <summary>
+            获取本地第一个IPv6地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.IPService.IsIPv4(System.Net.IPAddress)">
+            <summary>
+            是否IPv4地址
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.IPService.IsLocal(System.Net.IPAddress)">
+            <summary>
+            是否本地地址
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.IPService.GetIPs">
+            <summary>
+            获取可用的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.IPService.IsIPAddress(System.String)">
+             <summary>
+             判断是否是IP地址格式  0.0.0.0
+             </summary>
+             <param  name="str1">待判断的IP地址</param>
+             <returns>true  or  false</returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.ReflectionService">
+            <summary>
+            反射帮助类
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetInterfaceSignType``1">
+            <summary>
+            获取继承或实现了接口的对象列表
+            </summary>
+            <typeparam name="TInterface"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetInterfaceSignPath``1">
+            <summary>
+            获取继承或实现了接口的对象列表的路径
+            </summary>
+            <typeparam name="TInterface"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetAssembly">
+            <summary>
+            获取所有Assembly
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetAttribute``1">
+            <summary>
+            根据特性获取所对应标记的TAttribute
+            </summary>
+            <typeparam name="TAttribute"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetAttribute``2">
+            <summary>
+            根据特性获取所对应标记的TAttribute
+            </summary>
+            <typeparam name="InterfaceSign">特性类接口标记</typeparam>
+            <typeparam name="TAttribute">特性</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetAttribute``1(System.Reflection.Assembly)">
+            <summary>
+            根据Assembly获取特性集合
+            </summary>
+            <param name="assembly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetAttribute``2(System.Reflection.Assembly)">
+            <summary>
+            根据Assembly获取特性集合
+            </summary>
+            <typeparam name="InterfaceSign">特性类接口标记</typeparam>
+            <typeparam name="TAttribute">特性</typeparam>
+            <param name="assembly">程序集</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.ReflectionService.GetProperties``1(``0)">
+            <summary>
+            反射得到实体类的字段名称和值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.StringService">
+            <summary>
+            字符串服务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.StringService.StringPlaceholderReplacement``1(System.String,System.String,``0)">
+            <summary>
+            字符串占位符替换
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="templateContent">字符串内容</param>
+            <param name="placeholderFormat">占位符格式，例如{{{0}}}其中{0}是需要被替换的</param>
+            <param name="model"></param>
+        </member>
+        <member name="T:FrameworkCoreCommon.Base64Helper">
+            <summary>
+            Base64  转码操作
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.Base64Helper.Encode(System.String)">
+            <summary>
+            使用默认字符编码进行编码
+            </summary>
+            <param name="source">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.Base64Helper.Encode(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定字符编码进行编码
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="encoding">字符编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.Base64Helper.Decode(System.String)">
+            <summary>
+            使用默认字符编码进行解码
+            </summary>
+            <param name="source">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreCommon.Base64Helper.Decode(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定字符编码进行解码
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="encoding">字符编码</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreCommon.UserAgentHelper">
+            <summary>
+            UserAgent辅助操作类
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.UserAgentHelper.GetOperatingSystemName(System.String)">
+            <summary>
+            根据 UserAgent 获取操作系统名称
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreCommon.UserAgentHelper.GetBrowserName(System.String)">
+            <summary>
+            根据 UserAgent 获取浏览器名称
+            </summary>
+        </member>
+    </members>
+</doc>

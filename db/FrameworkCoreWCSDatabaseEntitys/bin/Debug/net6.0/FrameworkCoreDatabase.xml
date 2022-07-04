@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreDatabase</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkCoreDatabase.AddLongEntityBase">
+            <summary>
+            添加实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.AddLongEntityBase.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.AddLongEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.AddStringEntityBase">
+            <summary>
+            添加实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.AddStringEntityBase.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.AddStringEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.DeleteLongEntityBase">
+            <summary>
+            删除实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.DeleteLongEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.DeleteLongEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.DeleteLongEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.DeleteStringEntityBase">
+            <summary>
+            删除实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.DeleteStringEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.DeleteStringEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.DeleteStringEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityID`1">
+            <summary>
+            ID
+            </summary>
+            <typeparam name="TPrimaryKey"></typeparam>
+        </member>
+        <member name="P:FrameworkCoreDatabase.EntityID`1.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.GetLongEntityBase">
+            <summary>
+            获取实体Base
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.DataStatus">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetLongEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.GetStringEntityBase">
+            <summary>
+            获取实体Base
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.DataStatus">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.GetStringEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.LongEntityBase">
+            <summary>
+            实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.DataStatus">
+            <summary>
+            数据状态，当为2代表已经删除，1代表存在
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.LongEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.SQLServerTableLongEntityBase">
+            <summary>
+            SQL Server数据库表实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.DataStatus">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.CreateUserID">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableLongEntityBase.DataDescribe">
+            <summary>
+            数据描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.SQLServerTableStringEntityBase">
+            <summary>
+            SQL Server数据库表实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.DataStatus">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.CreateUserID">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.SQLServerTableStringEntityBase.DataDescribe">
+            <summary>
+            数据描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.StringEntityBase">
+            <summary>
+            实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.DataStatus">
+            <summary>
+            数据状态，当为2代表已经删除，1代表存在
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.CreateUserID">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.StringEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.UpdateLongEntityBase">
+            <summary>
+            修改实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateLongEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateLongEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateLongEntityBase.LastModifiedTime">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateLongEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.UpdateStringEntityBase">
+            <summary>
+            修改实体基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateStringEntityBase.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateStringEntityBase.LastModifiedUserID">
+            <summary>
+            最后修改用户ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateStringEntityBase.LastModifiedTime">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.UpdateStringEntityBase.DataDescribe">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityAutomaticRegisterAttribute">
+            <summary>
+            实体自动注册 特性
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.EntityAutomaticRegisterAttribute.Entity">
+            <summary>
+            实体
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.EntityAutomaticRegisterAttribute.TableName">
+            <summary>
+            Table 名称
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityFrameworkDatabaseConnection">
+            <summary>
+            数据库链接，单例模式
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseConnection.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="factory"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseConnection.GetPooledDbContextFactory(FrameworkCoreSystemConfig.DatabaseConfig)">
+            <summary>
+            获取数据库上下文线程池
+            </summary>
+            <param name="databaseConfig"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseConnection.GetEntityFrameworkDatabaseContextByPooledAsync(FrameworkCoreSystemConfig.DatabaseConfig)">
+             <summary>
+            根据数据库连接字符串创建数据库连接对象
+             </summary>
+             <param name="databaseConfig"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseConnection.GetEntityFrameworkDatabaseContextByPooled(FrameworkCoreSystemConfig.DatabaseConfig)">
+             <summary>
+            根据数据库连接字符串创建数据库连接对象
+             </summary>
+             <param name="databaseConfig"></param>
+             <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1">
+            <summary>
+            数据库操作 [EF 上下文单例会出现内存溢出和重复跟踪问题（尽量保证同一操作一个上下文，而不是整个单例）]
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="P:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.DatabaseContext">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.AsQueryable">
+            <summary>
+            数据库查询
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.#ctor(FrameworkCoreDatabase.EntityFrameworkDatabaseContext)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="databaseContext">db上下文</param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.AddAsync(`0)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Add(`0)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.AddRangeAsync(System.Collections.Generic.List{`0})">
+            <summary>
+            添加
+            </summary>
+            <param name="entities"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.AddRange(System.Collections.Generic.List{`0})">
+            <summary>
+            添加
+            </summary>
+            <param name="entities"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Delete(`0)">
+            <summary>
+            根据Entity删除
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.DeleteAsync(`0)">
+            <summary>
+            根据Entity删除
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Delete(System.Collections.Generic.List{`0})">
+            <summary>
+            根据多个Entity删除
+            </summary>
+            <param name="listentity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.DeleteAsync(System.Collections.Generic.List{`0})">
+            <summary>
+            根据多个Entity删除
+            </summary>
+            <param name="listentity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据表达式树删除，使用Dispatcher时，不需要手动调用Save
+            </summary>
+            <param name="exp"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Delete(System.Linq.IQueryable{`0})">
+            <summary>
+            根据查询结果删除，使用Dispatcher时，不需要手动调用Save
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Modify(`0)">
+            <summary>
+            修改数据库数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.ModifyAsync(`0)">
+            <summary>
+            修改数据库数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Modify(`0,System.String[])">
+            <summary>
+            根据View修改部分数据
+            </summary>
+            <param name="entity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.ModifyAsync(`0,System.String[])">
+            <summary>
+            根据View修改部分数据
+            </summary>
+            <param name="entity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Modify(System.Collections.Generic.List{`0},System.String[])">
+            <summary>
+            修改部分数据
+            </summary>
+            <param name="lstEntity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.ModifyAsync(System.Collections.Generic.List{`0},System.String[])">
+            <summary>
+            修改部分数据
+            </summary>
+            <param name="lstEntity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.Modify(System.Linq.IQueryable{`0},System.Func{`0,`0},System.String[])">
+            <summary>
+            根据View修改部分数据
+            </summary>
+            <param name="query"></param>
+            <param name="evaluationFunc"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.RemoveHoldingEntityInContext(System.Collections.Generic.List{`0})">
+            <summary>
+            用于监测Context中的Entity是否存在，如果存在，将其Detach，防止出现问题
+            </summary>
+            <param name="lstEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.RemoveHoldingEntityInContext(`0)">
+            <summary>
+            用于监测Context中的Entity是否存在，如果存在，将其Detach，防止出现问题
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.FirstOrDefaultAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            查询，返回Entity对象
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.FindAllAsync">
+            <summary>
+            查询，返回Entity列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.FindAllAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            查询，返回TResult列表
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="selectExpression"></param>
+            <param name="whereExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.GetPagingAsync``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取分页数据
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <typeparam name="OrderKey"></typeparam>
+            <param name="selectExpression"></param>
+            <param name="whereExpression"></param>
+            <param name="orderExpression"></param>
+            <param name="skip"></param>
+            <param name="pageSize"></param>
+            <param name="isDescending"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            返回记录数量
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.SqlQueryAsync(System.String,System.Object[])">
+            <summary>
+            直接通过Sql语句进行查询
+            </summary>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.RemoveContextEntities(System.Collections.Generic.List{`0})">
+            <summary>
+            移除保存失败的实体
+            </summary>
+            <param name="listEntities"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseOperation`1.RemoveContextEntities(`0)">
+            <summary>
+            移除保存失败的实体
+            </summary>
+            <param name="entities"></param>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityFrameworkDatabaseContext">
+            <summary>
+            数据库上下文扩展
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.Transaction">
+            <summary>
+            事务
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.IsChanged">
+            <summary>
+            是否有变化
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.SaveChanges">
+            <summary>
+            保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>
+            保存
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.TryRollbackAsync">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.TryRollback">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.TransactionCommitAsync">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.TransactionCommit">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            每个 DbContext 只触发一次
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityFrameworkDatabaseContextExtension">
+            <summary>
+            扩展方法
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContextExtension.Save(FrameworkCoreDatabase.EntityFrameworkDatabaseContext)">
+            <summary>
+            保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContextExtension.SaveAsync(FrameworkCoreDatabase.EntityFrameworkDatabaseContext)">
+            <summary>
+             保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkDatabaseContextExtension.DatabaseContextModelVerification(FrameworkCoreDatabase.EntityFrameworkDatabaseContext)">
+            <summary>
+            Model验证
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.ICustomModifiedFields">
+            <summary>
+            自定义修改字段
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.ICustomModifiedFields.InitModifiedFields">
+            <summary>
+            需要修改的字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreDatabase.IDatabaseOperation`1">
+            <summary>
+            数据库操作
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.AddAsync(`0)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Add(`0)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.AddRangeAsync(System.Collections.Generic.List{`0})">
+            <summary>
+            批量添加数据
+            </summary>
+            <param name="entities"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.AddRange(System.Collections.Generic.List{`0})">
+            <summary>
+            批量添加数据
+            </summary>
+            <param name="entities"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Delete(`0)">
+            <summary>
+            根据Entity删除数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.DeleteAsync(`0)">
+            <summary>
+            根据Entity删除数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Delete(System.Collections.Generic.List{`0})">
+            <summary>
+            根据List Entity删除数据
+            </summary>
+            <param name="listentity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.DeleteAsync(System.Collections.Generic.List{`0})">
+            <summary>
+            根据多个Entity删除
+            </summary>
+            <param name="listentity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据表达式树删除数据
+            </summary>
+            <param name="exp"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Delete(System.Linq.IQueryable{`0})">
+            <summary>
+            根据查询结果删除数据
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Modify(`0)">
+            <summary>
+            修改数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.ModifyAsync(`0)">
+            <summary>
+            修改数据库数据
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Modify(`0,System.String[])">
+            <summary>
+             根据View修改部分数据
+            </summary>
+            <param name="entity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.ModifyAsync(`0,System.String[])">
+            <summary>
+             根据View修改部分数据
+            </summary>
+            <param name="entity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Modify(System.Collections.Generic.List{`0},System.String[])">
+            <summary>
+            根据View修改部分数据
+            </summary>
+            <param name="lstEntity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.ModifyAsync(System.Collections.Generic.List{`0},System.String[])">
+            <summary>
+            修改部分数据
+            </summary>
+            <param name="lstEntity"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.Modify(System.Linq.IQueryable{`0},System.Func{`0,`0},System.String[])">
+            <summary>
+            根据查询结果修改部分数据
+            </summary>
+            <param name="query"></param>
+            <param name="evaluationFunc"></param>
+            <param name="modifiedFields"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.FirstOrDefaultAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            查询单条数据
+            </summary>
+            <param name="whereExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.FindAllAsync">
+            <summary>
+            查询所有数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.FindAllAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据条件查询所有数据
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="selectExpression"></param>
+            <param name="whereExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.GetPagingAsync``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取分页数据
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <typeparam name="OrderKey"></typeparam>
+            <param name="selectExpression"></param>
+            <param name="whereExpression"></param>
+            <param name="orderExpression"></param>
+            <param name="skip"></param>
+            <param name="pageSize"></param>
+            <param name="isDescending"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            返回记录数量
+            </summary>
+            <param name="whereExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.IDatabaseOperation`1.SqlQueryAsync(System.String,System.Object[])">
+            <summary>
+            SQL语句查询
+            </summary>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreDatabase.IEntityAutomaticRegisterAttribute">
+            <summary>
+            实体自动注册 特性 接口
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.IEntityAutomaticRegisterAttribute.Entity">
+            <summary>
+            实体
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreDatabase.IEntityAutomaticRegisterAttribute.TableName">
+            <summary>
+            Table 名称
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityFrameworkLogger">
+            <summary>
+            EF Core 日志
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLogger.#ctor(System.String,System.Int32,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="categoryName"></param>
+            <param name="databaseElapsedTimeThreshold"></param>
+            <param name="log"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLogger.BeginScope``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TState"></typeparam>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">
+            <summary>
+            
+            </summary>
+            <typeparam name="TState"></typeparam>
+            <param name="logLevel"></param>
+            <param name="eventId"></param>
+            <param name="state"></param>
+            <param name="exception"></param>
+            <param name="formatter"></param>
+        </member>
+        <member name="T:FrameworkCoreDatabase.EntityFrameworkLoggerProvider">
+            <summary>
+            EF Core 日志
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLoggerProvider.#ctor(System.Int32,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="databaseElapsedTimeThreshold"></param>
+            <param name="log"></param>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLoggerProvider.CreateLogger(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreDatabase.EntityFrameworkLoggerProvider.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreDatabase.FrameworkCoreDatabaseModule">
+            <summary>
+            数据库 Module
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreDatabase.FrameworkCoreDatabaseModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,749 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreWCSDatabaseEntitys\\FrameworkCoreWCSDatabaseEntitys.csproj": {}
+  },
+  "projects": {
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj",
+        "projectName": "FrameworkCoreApplication",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj",
+        "projectName": "FrameworkCoreCommon",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Exceptionless": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreDatabase\\FrameworkCoreDatabase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreDatabase\\FrameworkCoreDatabase.csproj",
+        "projectName": "FrameworkCoreDatabase",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreDatabase\\FrameworkCoreDatabase.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreDatabase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreLog\\FrameworkCoreLog.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreLog\\FrameworkCoreLog.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreMapping\\FrameworkCoreMapping.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreMapping\\FrameworkCoreMapping.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj",
+        "projectName": "FrameworkCoreExtensions",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj",
+        "projectName": "FrameworkCoreIOC",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.PlatformAbstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreLog\\FrameworkCoreLog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreLog\\FrameworkCoreLog.csproj",
+        "projectName": "FrameworkCoreLog",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreLog\\FrameworkCoreLog.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreLog\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Colorful.Console": {
+              "target": "Package",
+              "version": "[1.2.15, )"
+            },
+            "Exceptionless.Log4net": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreMapping\\FrameworkCoreMapping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreMapping\\FrameworkCoreMapping.csproj",
+        "projectName": "FrameworkCoreMapping",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreMapping\\FrameworkCoreMapping.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreMapping\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreCommon\\FrameworkCoreCommon.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj",
+        "projectName": "FrameworkCoreSystemConfig",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\FrameworkCoreSystemConfig.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreSystemConfig\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreApplication\\FrameworkCoreApplication.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreExtensions\\FrameworkCoreExtensions.csproj"
+              },
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreIOC\\FrameworkCoreIOC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreWCSDatabaseEntitys\\FrameworkCoreWCSDatabaseEntitys.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreWCSDatabaseEntitys\\FrameworkCoreWCSDatabaseEntitys.csproj",
+        "projectName": "FrameworkCoreWCSDatabaseEntitys",
+        "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreWCSDatabaseEntitys\\FrameworkCoreWCSDatabaseEntitys.csproj",
+        "packagesPath": "C:\\Users\\LingDian\\.nuget\\packages\\",
+        "outputPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreWCSDatabaseEntitys\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LingDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\MyPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreDatabase\\FrameworkCoreDatabase.csproj": {
+                "projectPath": "D:\\PrivateProject\\FrameworkCore\\src\\FrameworkCoreDatabase\\FrameworkCoreDatabase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Magicodes.IE.Excel.AspNetCore": {
+              "target": "Package",
+              "version": "[2.5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

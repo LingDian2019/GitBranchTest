@@ -1,0 +1,1833 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreWCSDatabaseEntitys</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskKey">
+            <summary>
+            第三方任务类型 Key
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskKey.WCSThirdPartyTaskTypeKey">
+            <summary>
+            第三方任务类型
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ApiConfig">
+            <summary>
+            Api配置表 
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ApiConfig.ApiType">
+            <summary>
+            Api类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ApiConfig.ApiGroup">
+            <summary>
+            Api组别
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ApiConfig.NameKey">
+            <summary>
+            API名称Key   
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ApiConfig.Describe">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ApiConfig.UrlPrefix">
+            <summary>
+            地址前缀    
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ApiConfig.UrlSuffix">
+            <summary>
+            地址后缀
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask">
+            <summary>
+            贴标机任务
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.TaskNumber">
+            <summary>
+            WMS任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.LabelCode">
+            <summary>
+            标签码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.URL">
+            <summary>
+            图片路径
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.EquipmentCode">
+            <summary>
+            设备号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.Status">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTask.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory">
+            <summary>
+            贴标机历史任务
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.TaskNumber">
+            <summary>
+            WMS任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.LabelCode">
+            <summary>
+            标签码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.URL">
+            <summary>
+            图片路径
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.EquipmentCode">
+            <summary>
+            设备号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.Status">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.AutoLabelingMachineTaskHistory.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTask">
+            <summary>
+            调度任务
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TaskNumber">
+            <summary>
+            任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.ThirdPartyTaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TaskItemCount">
+            <summary>
+            子任务总数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TaskStatus">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.StartLocation">
+            <summary>
+            开始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.StartType">
+            <summary>
+            起始设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TargetType">
+            <summary>
+            目标设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTask.FinishTaskTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory">
+            <summary>
+             调度任务历史表  
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TaskNumber">
+            <summary>
+            任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.ThirdPartyTaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TaskItemCount">
+            <summary>
+            子任务总数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TaskStatus">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.StartLocation">
+            <summary>
+            开始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.StartType">
+            <summary>
+            起始设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TargetType">
+            <summary>
+            目标设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskHistory.FinishTaskTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem">
+            <summary>
+            调度任务明细
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.DispatchTaskID">
+            <summary>
+            主任务ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.TaskNumber">
+            <summary>
+            任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.ExecuteSerialNumber">
+            <summary>
+            执行序号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.StartLocation">
+            <summary>
+            开始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.StartType">
+            <summary>
+            起始设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.TargetType">
+            <summary>
+            目标设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.RunStatus">
+            <summary>
+            运行状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.Status">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItem.FinshTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory">
+            <summary>
+            调度任务明细历史表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.DispatchTaskID">
+            <summary>
+            主任务ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.TaskNumber">
+            <summary>
+            任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.ExecuteSerialNumber">
+            <summary>
+            执行序号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.StartLocation">
+            <summary>
+            开始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.StartType">
+            <summary>
+            起始设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.TargetType">
+            <summary>
+            目标设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.RunStatus">
+            <summary>
+            运行状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.Status">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemHistory.FinshTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.Driver">
+            <summary>
+            WCS驱动
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.CodeDescribe">
+            <summary>
+            Code描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.Type">
+            <summary>
+            驱动类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.ProtocolType">
+            <summary>
+            协议类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.ConnectStatus">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Driver.ConnectDescribe">
+            <summary>
+            连接描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverParameter">
+            <summary>
+            WCS驱动参数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameter.DriverID">
+            <summary>
+            驱动ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameter.PropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameter.PropertyValue">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameter.DriverParaGroup">
+            <summary>
+            参数组
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameter.PropertyDescribe">
+            <summary>
+            属性描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.Equipment">
+            <summary>
+            WCS设备
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Equipment.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Equipment.Code">
+            <summary>
+            设备Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Equipment.Type">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Equipment.Model">
+            <summary>
+            设备模式
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Equipment.Status">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Equipment.DriverID">
+            <summary>
+            驱动ID
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ExceptionExitConfig">
+            <summary>
+            异常口配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ExceptionExitConfig.CurrentStation">
+            <summary>
+            申请站台
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ExceptionExitConfig.ExceptionExit">
+            <summary>
+            异常口
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ExceptionExitConfig.WarehouseCode">
+            <summary>
+            仓库Code
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.PLCTagGroup">
+            <summary>
+            PLC 标签组
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagGroup.DriverID">
+            <summary>
+            驱动ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagGroup.Name">
+            <summary>
+            组名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagGroup.Period">
+            <summary>
+            间隔周期，单位毫秒，默认200
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagGroup.MaxSize">
+            <summary>
+            最大读取大小
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagGroup.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.PLCTagItem">
+            <summary>
+            PLC 标签项
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.PLCTagGroupID">
+            <summary>
+            PLC 组 ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagSequence">
+            <summary>
+            标签顺序
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagCode">
+            <summary>
+            标签Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagType">
+            <summary>
+            标签类型,使用系统枚举：TypeCode
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagAddress">
+            <summary>
+            标签地址
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagSize">
+            <summary>
+            标签地址大小
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagDescribe">
+            <summary>
+            标签描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.TagFlag">
+            <summary>
+            标签标记
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.PLCTagItem.EquipmentID">
+            <summary>
+            设备ID
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.RelatedEquipment">
+            <summary>
+            设备关联表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RelatedEquipment.EquipmentID">
+            <summary>
+            设备ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RelatedEquipment.RelatedEquipmentID">
+            <summary>
+            关联设备ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RelatedEquipment.RelatedType">
+            <summary>
+            关联类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RelatedEquipment.RelatedInfo">
+            <summary>
+            关联信息
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.Route">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.StartCode">
+            <summary>
+            开始设备Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.TargetCode">
+            <summary>
+            目标设备Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.Weight">
+            <summary>
+            权重,越小越好，与容易被选中
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.StartEquipmentType">
+            <summary>
+            起始设备类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Route.TargetEquipmentType">
+            <summary>
+            目标设备类型
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig">
+            <summary>
+            规则引擎配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.EquipmentID">
+            <summary>
+            设备ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.DriverID">
+            <summary>
+            驱动id
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.RuleName">
+            <summary>
+            规则引擎配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.RuleNameDescribe">
+            <summary>
+            规则引擎配置描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.Expression">
+            <summary>
+            表达式
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.RulesEngineConfig.ExpressionMessage">
+            <summary>
+            表达式匹配消息
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask">
+            <summary>
+            第三方任务
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.TaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.GroupName">
+            <summary>
+            组号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.Status">
+            <summary>
+            第三方任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.RunStatus">
+            <summary>
+            运行状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.StartLocation">
+            <summary>
+            起始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.ExecutionTaskStartTime">
+            <summary>
+            执行任务时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.FinishTaskTime">
+            <summary>
+            结束任务时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.OtherParams">
+            <summary>
+            其他参数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTask.DataSync">
+            <summary>
+            数据同步
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory">
+            <summary>
+            第三方任务历史表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.TaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.GroupName">
+            <summary>
+            组号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.Status">
+            <summary>
+            第三方任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.RunStatus">
+            <summary>
+            运行状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.StartLocation">
+            <summary>
+            起始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.ExecutionTaskStartTime">
+            <summary>
+            执行任务时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.FinishTaskTime">
+            <summary>
+            结束任务时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.OtherParams">
+            <summary>
+            其他参数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHistory.DataSync">
+            <summary>
+            数据同步
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.TrafficThresholdConfig">
+            <summary>
+            流量阀值配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.TrafficThresholdConfig.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.TrafficThresholdConfig.ThresholdKey">
+            <summary>
+            阈值Key，一般是任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.TrafficThresholdConfig.ThresholdDescribe">
+            <summary>
+            阈值描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.TrafficThresholdConfig.MaxQuantity">
+            <summary>
+            最大数量
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.VisualizationConfig">
+            <summary>
+            看板配置表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.VisualizationConfig.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.VisualizationConfig.VisualizationName">
+            <summary>
+            看板名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.VisualizationConfig.VisualizationType">
+            <summary>
+            看板类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.VisualizationConfig.VisualizationAddress">
+            <summary>
+            看板地址    
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.VisualizationConfig.VisualizationContent">
+            <summary>
+            看板内容
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.Warehouse">
+            <summary>
+            WCS仓库
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Warehouse.Name">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Warehouse.Code">
+            <summary>
+            仓库Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Warehouse.ZonesCode">
+            <summary>
+            仓库区域Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.Warehouse.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus">
+            <summary>
+            贴标机任务状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus.Waitting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus.Ready">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus.SendSuccess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus.SendFailed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus.ReceivedSuccess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ALMTaskStatus.PrintFinished">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ConnectStatus">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ConnectStatus.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ConnectStatus.Connected">
+            <summary>
+            已连接
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ConnectStatus.ConnectionException">
+            <summary>
+            连接异常
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ConnectStatus.Offline">
+            <summary>
+            离线
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DataSync">
+            <summary>
+            数据同步
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DataSync.WaitingSynchronization">
+            <summary>
+            同步
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DataSync.NoSynchronization">
+            <summary>
+            不同步
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DataSync.SynchronizationComplete">
+            <summary>
+            同步完成
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DataSync.SynchronizationFailure">
+            <summary>
+            同步失败
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemRunStatus">
+            <summary>
+            调度任务明细 运行状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemRunStatus.CannotExecute">
+            <summary>
+            不可执行
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemRunStatus.CanExecute">
+            <summary>
+            可执行
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemStatus">
+            <summary>
+            调度任务明细 状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemStatus.NoStarted">
+            <summary>
+            未开始
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemStatus.Running">
+            <summary>
+            运行中
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskItemStatus.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskStatus">
+            <summary>
+            调度任务 状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskStatus.NotStart">
+            <summary>
+            未开始
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskStatus.Running">
+            <summary>
+            运行中
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskStatus.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskStatus.SystemConstraintFinish">
+            <summary>
+            系统强制完成
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskStatus.ArtificialConstraintFinish">
+            <summary>
+            用户强制完成
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DispatchTaskType">
+            <summary>
+            调度任务类型
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskType.Move">
+            <summary>
+            搬运任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DispatchTaskType.RobotUnstacke">
+            <summary>
+            机械拆垛任务
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverProtocolType">
+            <summary>
+            驱动协议类型
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverProtocolType.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverProtocolType.SocketClient">
+            <summary>
+            Socket客户端
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverProtocolType.SocketServer">
+            <summary>
+            Socket服务端
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverProtocolType.SiemensS7Net">
+            <summary>
+            西门子S7网络协议
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverProtocolType.OpcUaClient">
+            <summary>
+            OpcUa客户端
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverType">
+            <summary>
+            驱动类型
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.LED">
+            <summary>
+            LED
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.Conveyor">
+            <summary>
+            输送线
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.Robot">
+            <summary>
+            机械手
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.AutoLabeling">
+            <summary>
+            自动贴标机
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.FourWayRGV">
+            <summary>
+            四向穿梭车
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.DriverType.RoadwayStacker">
+            <summary>
+            巷道式堆垛机
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.EquipmentModel">
+            <summary>
+            设备 模式
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentModel.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentModel.Manual">
+            <summary>
+            手动
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentModel.Auto">
+            <summary>
+            自动
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentModel.Stop">
+            <summary>
+            停止
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentModel.SemiAutomatic">
+            <summary>
+            半自动
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.EquipmentStatus">
+            <summary>
+            设备 状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentStatus.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentStatus.Normal">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentStatus.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.EquipmentType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.LED">
+            <summary>
+            LED
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.Conveyor">
+            <summary>
+            输送线
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.Robot">
+            <summary>
+            机械手
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.AutoLabeling">
+            <summary>
+            自动贴标机
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.FourWayRGV">
+            <summary>
+            四向穿梭车
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.EquipmentType.RoadwayStacker">
+            <summary>
+            巷道式堆垛机
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.TaskType">
+            <summary>
+            第三方任务类型
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.FreshSortingTask">
+            <summary>
+            生鲜分拣任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.DryGoodsSortingTask">
+            <summary>
+            干货分拣任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.TrayInStorageTask">
+            <summary>
+            托盘入库任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.TrayOutStorageTask">
+            <summary>
+            托盘出库任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.TrayMoveTask">
+            <summary>
+            托盘移动任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.EmptyTrayGroupTask">
+            <summary>
+            空托盘组任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.TaskType.EmptyTurnoverBasketGroupTask">
+            <summary>
+            空周转筐组任务
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskRunStatus">
+            <summary>
+            第三方任务 运行状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskRunStatus.CannotExecute">
+            <summary>
+            不可执行
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskRunStatus.CanExecute">
+            <summary>
+            可执行
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskStatus">
+            <summary>
+            第三方任务状态
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskStatus.NoStarted">
+            <summary>
+            未开始
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskStatus.CreateTask">
+            <summary>
+            已创建任务
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskStatus.Execution">
+            <summary>
+            执行中
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskStatus.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.VisualizationType">
+            <summary>
+            看板类型
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.VisualizationType.Topo">
+            <summary>
+            拓扑图
+            </summary>
+        </member>
+        <member name="F:FrameworkCoreWCSDatabaseEntitys.VisualizationType.DataStatistics">
+            <summary>
+            数据统计
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.BaseEntityExport">
+            <summary>
+            导出基类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.BaseEntityExport.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.BaseEntityExport.LastModifiedTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.BaseEntityExport.DataDescribe">
+            <summary>
+            数据描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.BaseEntityImport">
+            <summary>
+            导入基类
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverExport">
+            <summary>
+            导出-驱动表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.WareHouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.CodeDescribe">
+            <summary>
+            Code描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.Type">
+            <summary>
+            驱动类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.ProtocolType">
+            <summary>
+            协议类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.ConnectStatus">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.ConnectDescribe">
+            <summary>
+            连接描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverExport.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverImport">
+            <summary>
+            导入-驱动表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverImport.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverImport.CodeDescribe">
+            <summary>
+            Code描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverImport.Type">
+            <summary>
+            驱动类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverImport.ProtocolType">
+            <summary>
+            协议类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverImport.ActivateStatus">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport">
+            <summary>
+            导出-驱动参数表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.WareHouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.CodeDescribe">
+            <summary>
+            Code描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.PropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.PropertyValue">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.DriverParaGroup">
+            <summary>
+            驱动参数组
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterExport.PropertyDescribe">
+            <summary>
+            属性描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.DriverParameterImport">
+            <summary>
+            导入-驱动参数表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterImport.DriverID">
+            <summary>
+            驱动ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterImport.PropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterImport.PropertyValue">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterImport.DriverParaGroup">
+            <summary>
+            驱动参数组
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.DriverParameterImport.PropertyDescribe">
+            <summary>
+            属性描述
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport">
+            <summary>
+            导出-第三方任务表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.TaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.GroupName">
+            <summary>
+            组名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.Status">
+            <summary>
+            第三方任务状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.RunStatus">
+            <summary>
+            运行状态
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.StartLocation">
+            <summary>
+            起始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.ExecutionTaskStartTime">
+            <summary>
+            执行任务时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.FinishTaskTime">
+            <summary>
+            结束任务时间
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskExport.TaskMessage">
+            <summary>
+            任务消息
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport">
+            <summary>
+            导出表头-第三方任务表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.TaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.GroupName">
+            <summary>
+            组名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.Priority">
+            <summary>
+            优先级，越少越优先，默认优先级100,1代表最优先
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.StartLocation">
+            <summary>
+            起始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskHeaderExport.ExecutionTaskStartTime">
+            <summary>
+            执行任务时间
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport">
+            <summary>
+            导入-第三方任务表
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.TaskNumber">
+            <summary>
+            第三方任务号
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.GroupName">
+            <summary>
+            组名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.ContainerBarcode">
+            <summary>
+            容器条码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.Priority">
+            <summary>
+            优先级,越小越优先,范围只能0到100
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.StartCode">
+            <summary>
+            开始设备Code，是指这个任务最开始那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.StartLocation">
+            <summary>
+            起始位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.TargetCode">
+            <summary>
+            目标设备Code，是指这个任务目标是那个设备执行
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.TargetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.OtherParams">
+            <summary>
+            其他参数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreWCSDatabaseEntitys.ThirdPartyTaskImport.DataDescribe">
+            <summary>
+            数据备注
+            </summary>
+        </member>
+    </members>
+</doc>

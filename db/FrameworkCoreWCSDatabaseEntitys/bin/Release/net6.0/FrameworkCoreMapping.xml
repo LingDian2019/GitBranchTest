@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreMapping</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkCoreMapping.FrameworkCoreMappingModule">
+            <summary>
+            FrameworkCoreMapping Module
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreMapping.FrameworkCoreMappingModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:FrameworkCoreMapping.IRelationalMappingService`2">
+            <summary>
+            关系映射接口
+            </summary>
+            <typeparam name="Model"></typeparam>
+            <typeparam name="Entity"></typeparam>
+        </member>
+        <member name="M:FrameworkCoreMapping.IRelationalMappingService`2.GetEntity(`0)">
+            <summary>
+            根据model获取实体
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreMapping.IRelationalMappingService`2.GetModel(`1)">
+            <summary>
+            根据实体获取mode
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreMapping.IRelationalMappingService`2.GetEntityList(System.Collections.Generic.List{`0})">
+            <summary>
+            根据list model获取list 实体
+            </summary>
+            <param name="listModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreMapping.IRelationalMappingService`2.GetModelList(System.Collections.Generic.List{`1})">
+            <summary>
+            根据list 实体 获取list modle
+            </summary>
+            <param name="listEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreMapping.RelationalMappingService`2">
+            <summary>
+            实体映射
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:FrameworkCoreMapping.RelationalMappingService`2.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreMapping.RelationalMappingService`2.GetEntity(`0)">
+            <summary>
+            根据model获取实体
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreMapping.RelationalMappingService`2.GetModel(`1)">
+            <summary>
+            根据实体获取mode
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreMapping.RelationalMappingService`2.GetEntityList(System.Collections.Generic.List{`0})">
+            <summary>
+            根据list model获取list 实体
+            </summary>
+            <param name="lstModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkCoreMapping.RelationalMappingService`2.GetModelList(System.Collections.Generic.List{`1})">
+            <summary>
+            根据list 实体 获取list modle
+            </summary>
+            <param name="lstEntity"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

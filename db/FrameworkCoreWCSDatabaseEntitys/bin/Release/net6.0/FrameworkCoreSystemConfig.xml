@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkCoreSystemConfig</name>
+    </assembly>
+    <members>
+        <member name="T:System.FrameworkCoreSystemConfigExtension">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.FrameworkCoreSystemConfigExtension.ConfigureFrameworkCoreSystemConfig(Microsoft.Extensions.Hosting.IHostBuilder,System.Collections.Generic.List{System.String})">
+            <summary>
+            自动注入系统配置文件
+            </summary>
+            <param name="hostBuilder"></param>
+            <param name="pathJsons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.FrameworkCoreSystemConfigExtension.AddFrameworkCoreSystemConfigCollection(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            向容器添加服务
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.FrameworkCoreSystemConfigModule">
+            <summary>
+            框架配置模块
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreSystemConfig.FrameworkCoreSystemConfigModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.IFrameworkConfigService">
+            <summary>
+            框架配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.SystemBasis">
+            <summary>
+            系统基础配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.Snowflake">
+            <summary>
+            雪花配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.Jwt">
+            <summary>
+            WebAPI Access Token配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.WeChat">
+            <summary>
+            微信配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.RabbitMQ">
+            <summary>
+            Rabbit MQ 消费者配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.Consul">
+            <summary>
+            Consul
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.Redis">
+            <summary>
+            Redis
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.DatabaseConfig">
+            <summary>
+            MSSQL DB 连接
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.IFrameworkConfigService.ExceptionlessConfig">
+            <summary>
+            ExceptionlessConfig
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreSystemConfig.IFrameworkConfigService.GetConfigValue``1(System.String)">
+            <summary>
+            根据配置名称获取值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="configName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.ConsulConfig">
+            <summary>
+            Consul 配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.ConsulClientAddress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.Datacenter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.HTTP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.Address">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.Port">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ConsulConfig.Tags">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.DatabaseConfig">
+            <summary>
+            Database 连接配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.Type">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.ORMType">
+            <summary>
+            ORM 类型
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.PoolSize">
+            <summary>
+            数据库连接池(设置为小于数据库连接池的 Max_Pool_Size)
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.OpenLog">
+            <summary>
+            是否打开记录日志
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.DatabaseElapsedTimeThreshold">
+            <summary>
+            数据库运行耗时阈值，单位毫秒（超过或者等于该毫秒记录日志）
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.EntityFrameworkToContextTracker">
+            <summary>
+            EntityFramework 上下文跟踪器，true开启,false 关闭
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.DatabaseConfig.EntityFrameworkToAutoDetectChangesEnabled">
+            <summary>
+            EntityFramework 状态同步,默认设置关闭,false关闭,true 开启
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.ExceptionlessConfig">
+            <summary>
+            Exceptionless配置类
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ExceptionlessConfig.ApiKey">
+            <summary>
+            APIKey值
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.ExceptionlessConfig.ServerUrl">
+            <summary>
+            服务地址
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.JwtConfig">
+            <summary>
+            Web API Access Token 配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.JwtConfig.Iss">
+            <summary>
+            签发者
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.JwtConfig.Aud">
+            <summary>
+            接收者
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.JwtConfig.ExpirationTime">
+            <summary>
+            过期时间 秒
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.JwtConfig.TokenKey">
+            <summary>
+            Token 密钥 
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.RabbitMQConfig">
+            <summary>
+            RabitMQ 连接信息
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.RabbitMQConfig.HostName">
+            <summary>
+            IP 地址
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.RabbitMQConfig.Port">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.RabbitMQConfig.UserName">
+            <summary>
+            登录账户
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.RabbitMQConfig.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.RedisConfig">
+            <summary>
+            Redis 配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.RedisConfig.ConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.RedisConfig.Enable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.SnowflakeConfig">
+            <summary>
+            雪花配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SnowflakeConfig.WorkerId">
+            <summary>
+            机器Id，取10位。内置默认取IP+进程+线程，不能保证绝对唯一，要求高的场合建议外部保证WorkerId唯一
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SnowflakeConfig.GlobalWorkerId">
+            <summary>
+            全局机器Id。若设置，所有雪花实例都将使用该Id
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SnowflakeConfig.NodeId">
+            <summary>
+            全局机器Id。若设置，所有雪花实例都将使用该Id
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.SystemBasisConfig">
+            <summary>
+            系统配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.ApplicationID">
+            <summary>
+            应用ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.Code">
+            <summary>
+            系统代码
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.Name">
+            <summary>
+            系统名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.Instance">
+            <summary>
+            应用实例。单应用多实例部署时用于唯一标识实例节点
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.APIRequestResponseLogSaveDatabase">
+            <summary>
+            API 请求响应日志是否存储数据库
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.APIRequestResponseLogForceSave">
+            <summary>
+            API 请求想要日志强制保存
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.WarehouseID">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.WarehouseCode">
+            <summary>
+            仓库Code
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.WarehouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.ClassMethodElapsedTimeThreshold">
+            <summary>
+            类方法间隔时间，单位毫秒
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.SystemBasisConfig.WeChatTemplateLogConfig">
+            <summary>
+            微信模板日志配置
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.WeChatConfig">
+            <summary>
+            微信配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.WeChatConfig.AppID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.WeChatConfig.AppSecret">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.WeChatConfig.WebWeChatUrlHead">
+            <summary>
+            网页微信Url头部
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.WeChatTemplateLogConfig">
+            <summary>
+            微信模板日志配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.WeChatTemplateLogConfig.IsOpenWeChatLog">
+            <summary>
+            是否打开微信模板日志
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.WeChatTemplateLogConfig.TemplateID">
+            <summary>
+            模板ID
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.WeChatTemplateLogConfig.ToUsers">
+            <summary>
+            接收者
+            </summary>
+        </member>
+        <member name="T:FrameworkCoreSystemConfig.FrameworkConfigService">
+            <summary>
+            框架系统配置，当出现乱码的时候，把配置文件格式改成UTF-8
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreSystemConfig.FrameworkConfigService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.SystemBasis">
+            <summary>
+            系统基础配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.Snowflake">
+            <summary>
+            雪花配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.Jwt">
+            <summary>
+            WebAPI Access Token配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.WeChat">
+            <summary>
+            微信配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.RabbitMQ">
+            <summary>
+            Rabbit MQ 配置
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.Redis">
+            <summary>
+            Redis
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.Consul">
+            <summary>
+            Consul
+            </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.DatabaseConfig">
+             <summary>
+            Database 配置
+             </summary>
+        </member>
+        <member name="P:FrameworkCoreSystemConfig.FrameworkConfigService.ExceptionlessConfig">
+            <summary>
+            ExceptionlessConfig
+            </summary>
+        </member>
+        <member name="M:FrameworkCoreSystemConfig.FrameworkConfigService.GetConfigValue``1(System.String)">
+            <summary>
+            根据配置名称获取值
+            </summary>
+            <param name="configName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
